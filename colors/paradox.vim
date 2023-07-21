@@ -10,10 +10,6 @@ let g:colors_name = 'paradox'
 set background=dark
 let s:background = &background
 
-if !(has('termguicolors') && &termguicolors)
-  finish
-endif
-
 " #0d1925
 let s:p = #{
       \  bg : '#181c27',
