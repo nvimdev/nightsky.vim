@@ -13,6 +13,7 @@ let s:background = &background
 " #0d1925
 let s:p = #{
       \  bg : '#181c27',
+      \  bg_dim : '#292c33',
       \  bg_alt : '#303030' ,
       \  fg : '#cccccc',
       \  fg_dim : '#989898',
@@ -67,8 +68,8 @@ exe 'hi Title' . s:fg_orange .'gui=bold'
 exe 'hi Cursorline' .s:bg_bg_alt 
 exe 'hi CursorLineNr' . s:fg_fg 
 "pmenu
-exe 'hi Pmenu' .s:bg_bg_alt. s:fg_fg_dim 
-exe 'hi PmenuSel' . s:fg_bg_alt .s:bg_bg 
+exe 'hi Pmenu' .s:bg_bg_dim. s:fg_fg_dim 
+exe 'hi PmenuSel' . s:fg_teal .s:bg_bg 
 exe 'hi PmenuSbar guifg=#586e75' 
 exe 'hi PmenuThumb' .s:bg_bg 
 exe 'hi PmenuKind' .s:bg_bg_alt. s:fg_yellow 
@@ -77,7 +78,7 @@ hi! link PmenuExtra Pmenu
 hi! link PmenuExtraSel PmenuSel
 hi! link WildMenu Pmenu
 "statusline
-exe 'hi StatusLine' .s:bg_bg_alt
+exe 'hi StatusLine' .s:fg_fg_dim . s:bg_bg_dim. ' gui=bold cterm=none'
 exe 'hi StatusLineNC' . s:fg_fg_dim .s:bg_bg_alt
 exe 'hi WinBar' .s:bg_none
 exe 'hi WinBarNC' . s:bg_none
@@ -196,8 +197,8 @@ hi! link  @tag.delimiter.typescript @tag.delimiter.html
 "-@Markdown
 exe 'hi @text.reference.markdown_inline' . s:fg_blue 
 "-@Diff
-exe 'hi DiffAdd' . s:fg_green 
-exe 'hi DiffChange' . s:fg_blue 
+exe 'hi DiffAdd' . s:fg_teal  . ' guibg=NONE'
+exe 'hi DiffChange' . s:fg_blue
 exe 'hi DiffDelete' . s:fg_orange 
 exe 'hi DiffText' . s:fg_orange 
 hi! link @text.diff.add.diff DiffAdd
