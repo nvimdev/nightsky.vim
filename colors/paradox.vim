@@ -87,7 +87,7 @@ exe 'hi Error' . s:fg_red . 'gui=bold guibg=NONE'
 hi! link ErrorMsg Error
 "Markup
 exe 'hi TODO' . s:fg_cyan
-exe 'hi Conceal' . s:fg_blue
+exe 'hi Conceal' . s:fg_blue .. ' guibg=NONE'
 hi! link  NonText Comment
 "Float
 exe 'hi FloatBorder' . s:fg_blue
