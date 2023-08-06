@@ -247,3 +247,8 @@ exe 'hi CursorWord' .s:bg_bg_alt
 hi! link IndentLine LineNr 
 "Lspsaga
 exe 'hi SagaVariable' . s:fg_green 
+"Rapid
+exe 'hi RapidComplete' .s:fg_red . ' gui=bold'
+exe 'hi RapidTimTaken' .s:fg_purple . ' gui=bold'
+exe 'hi RapidFile' . s:fg_blue . ' gui=bold'
+exe 'hi RapidTargetPos' . s:fg_teal . ' gui=bold'
