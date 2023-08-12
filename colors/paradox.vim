@@ -248,7 +248,8 @@ hi! link IndentLine LineNr
 "Lspsaga
 exe 'hi SagaVariable' . s:fg_green 
 "Rapid
-exe 'hi RapidComplete' .s:fg_red . ' gui=bold'
-exe 'hi RapidTimeTaken' .s:fg_purple . ' gui=bold'
+exe 'hi RapidFinished' .s:fg_red . ' gui=bold'
+exe 'hi RapidTake' .s:fg_purple . ' gui=bold'
+exe 'hi RapidDate' .s:fg_purple . ' gui=bold'
 exe 'hi RapidFile' . s:fg_blue . ' gui=bold'
 exe 'hi RapidTargetPos' . s:fg_teal . ' gui=bold'
