@@ -80,7 +80,7 @@ hi! link PmenuExtraSel PmenuSel
 hi! link WildMenu Pmenu
 "statusline
 exe 'hi StatusLine' .s:fg_fg_dim . s:bg_bg_lt. ' gui=bold cterm=none'
-exe 'hi StatusLineNC' . s:fg_fg_dim .s:bg_bg_lt. ' gui=bold cterm=none'
+exe 'hi StatusLineNC' . s:fg_fg_dim .s:bg_bg_alt
 exe 'hi WinBar' .s:bg_none
 exe 'hi WinBarNC' . s:bg_none
 "Error
