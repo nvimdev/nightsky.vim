@@ -14,6 +14,7 @@ let s:background = &background
 let s:p = #{
       \  bg : '#181c27',
       \  bg_dim : '#191721',
+      \  bg_lt : '#292c33',
       \  bg_alt : '#303030' ,
       \  fg : '#cccccc',
       \  fg_dim : '#989898',
@@ -78,8 +79,8 @@ hi! link PmenuExtra Pmenu
 hi! link PmenuExtraSel PmenuSel
 hi! link WildMenu Pmenu
 "statusline
-exe 'hi StatusLine' .s:fg_fg_dim . s:bg_bg_dim. ' gui=bold cterm=none'
-exe 'hi StatusLineNC' . s:fg_fg_dim .s:bg_bg_alt
+exe 'hi StatusLine' .s:fg_fg_dim . s:bg_bg_lt. ' gui=bold cterm=none'
+exe 'hi StatusLineNC' . s:fg_fg_dim .s:bg_bg_lt. ' gui=bold cterm=none'
 exe 'hi WinBar' .s:bg_none
 exe 'hi WinBarNC' . s:bg_none
 "Error
