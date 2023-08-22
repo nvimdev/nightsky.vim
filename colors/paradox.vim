@@ -13,7 +13,7 @@ let s:background = &background
 " #0d1925
 let s:p = #{
       \  bg : '#181c27',
-      \  bg_dim : '#292c33',
+      \  bg_dim : '#191721',
       \  bg_alt : '#303030' ,
       \  fg : '#cccccc',
       \  fg_dim : '#989898',
@@ -69,10 +69,10 @@ exe 'hi Cursorline' .s:bg_bg_alt
 exe 'hi CursorLineNr' . s:fg_fg 
 "pmenu
 exe 'hi Pmenu' .s:bg_bg_dim. s:fg_fg_dim 
-exe 'hi PmenuSel' . s:fg_teal .s:bg_bg 
+exe 'hi PmenuSel' . s:fg_teal .s:bg_bg_alt
 exe 'hi PmenuSbar guifg=#586e75' 
 exe 'hi PmenuThumb' .s:bg_bg 
-exe 'hi PmenuKind' .s:bg_bg_alt. s:fg_yellow 
+exe 'hi PmenuKind' .s:bg_bg_dim. s:fg_yellow 
 hi! link PmenuKindSel PmenuSel
 hi! link PmenuExtra Pmenu
 hi! link PmenuExtraSel PmenuSel
