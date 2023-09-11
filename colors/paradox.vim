@@ -21,7 +21,7 @@ let s:p = #{
       \  fg_alt : '#75715E',
       \  red :    '#ff5f59' ,
       \  orange : '#cc7a29' ,
-      \  yellow : '#cca352' ,
+      \  yellow : '#ccad52' ,
       \  green : '#9eb336' ,
       \  cyan : '#52bccc' ,
       \  blue : '#5c95e6' ,
