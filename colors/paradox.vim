@@ -12,18 +12,18 @@ let s:background = &background
 
 " #0d1925
 let s:p = #{
-      \  bg : '#181c27',
+      \  bg : '#161a24',
       \  bg_dim : '#191721',
       \  bg_lt : '#292c33',
       \  bg_alt : '#303030' ,
-      \  fg : '#cccccc',
+      \  fg : '#b3b3b3',
       \  fg_dim : '#989898',
       \  fg_alt : '#75715E',
       \  red :    '#ff5f59' ,
       \  orange : '#cc7a29' ,
       \  yellow : '#ccad52' ,
       \  green : '#9eb336' ,
-      \  cyan : '#52bccc' ,
+      \  cyan : '#45e6e6' ,
       \  blue : '#5c95e6' ,
       \  purple : '#957acc' ,
       \  teal : '#47b38f' ,
