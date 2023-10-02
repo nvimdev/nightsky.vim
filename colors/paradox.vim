@@ -16,7 +16,7 @@ let s:p = #{
       \  bg_dim : '#191721',
       \  bg_lt : '#292c33',
       \  bg_alt : '#303030' ,
-      \  fg : '#b3b3b3',
+      \  fg : '#cccccc',
       \  fg_dim : '#989898',
       \  fg_alt : '#75715E',
       \  red :    '#ff5f59' ,
