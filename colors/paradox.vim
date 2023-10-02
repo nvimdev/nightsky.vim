@@ -23,7 +23,7 @@ let s:p = #{
       \  orange : '#cc7a29' ,
       \  yellow : '#ccad52' ,
       \  green : '#9eb336' ,
-      \  cyan : '#45e6e6' ,
+      \  cyan : '#52bccc' ,
       \  blue : '#5c95e6' ,
       \  purple : '#957acc' ,
       \  teal : '#47b38f' ,
