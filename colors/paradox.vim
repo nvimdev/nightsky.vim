@@ -256,5 +256,5 @@ exe 'hi RapidFile' . s:fg_blue . ' gui=bold'
 exe 'hi RapidTargetPos' . s:fg_teal . ' gui=bold'
 
 "lsp relate
-hi! link LspSignatureActiveParameter Type
+exe 'hi LspSignatureActiveParameter' . s:fg_yellow . ' gui=underline'
 
