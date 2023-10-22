@@ -254,3 +254,7 @@ exe 'hi RapidTake' .s:fg_purple . ' gui=bold'
 exe 'hi RapidDate' .s:fg_purple . ' gui=bold'
 exe 'hi RapidFile' . s:fg_blue . ' gui=bold'
 exe 'hi RapidTargetPos' . s:fg_teal . ' gui=bold'
+
+"lsp relate
+hi! link LspSignatureActiveParameter Type
+
