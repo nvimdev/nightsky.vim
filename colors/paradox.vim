@@ -258,3 +258,5 @@ exe 'hi RapidTargetPos' . s:fg_teal . ' gui=bold'
 "lsp relate
 exe 'hi LspSignatureActiveParameter' . s:fg_yellow . ' gui=underline'
 
+"netrw
+exe 'hi netrwTreeBar link Comment' 
