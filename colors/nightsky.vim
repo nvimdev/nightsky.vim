@@ -1,4 +1,4 @@
-" Name:       paradox.vim
+" Name:       nightsky.vim
 " Version:    0.1.0
 " Maintainer: glepnir <https://github.com/glepnir>
 " License:    The MIT License (MIT)
@@ -6,7 +6,7 @@
 " A minimal colour scheme for Vim and Neovim
 hi clear
 
-let g:colors_name = 'paradox'
+let g:colors_name = 'nightsky'
 set background=dark
 let s:background = &background
 
