@@ -13,9 +13,9 @@ let s:background = &background
 " #0d1925
 let s:p = #{
       \  bg : '#161a24',
-      \  bg_dim : '#1f2533',
-      \  bg_lt : '#292c33',
-      \  bg_alt : '#303030' ,
+      \  bg_deep: '#13151f',
+      \  bg_dim : '#1c202e',
+      \  bg_alt : '#222738' ,
       \  fg : '#cccccc',
       \  fg_dim : '#989898',
       \  fg_alt : '#75715E',
@@ -56,31 +56,30 @@ exe 'hi Normal' . s:fg_fg . s:bg_bg
 "signcolumn
 exe 'hi SignColumn' . s:bg_bg
 "buffer
-exe 'hi LineNr' .s:fg_bg_alt
+hi LineNr guifg=#272d40
 exe 'hi EndOfBuffer'. s:fg_bg . s:bg_none
 exe 'hi Search'. s:fg_yellow . 'gui=reverse'
 exe 'hi Visual' s:bg_bg_alt
 exe 'hi ColorColumn'. s:bg_bg_alt
-exe 'hi Whitespace'. s:fg_bg_alt 
+exe 'hi Whitespace'. s:fg_bg_alt
 "window
-exe 'hi VertSplit' . s:fg_bg_alt 
+exe 'hi VertSplit' . s:fg_bg_alt
 exe 'hi Title' . s:fg_orange .'gui=bold'
 "cursorline
-exe 'hi Cursorline' .s:bg_bg_alt 
-exe 'hi CursorLineNr' . s:fg_fg 
+exe 'hi Cursorline' .s:bg_bg_dim
+exe 'hi CursorLineNr' . s:fg_fg
 "pmenu
-exe 'hi Pmenu' .s:bg_bg_dim. s:fg_fg_dim 
-exe 'hi PmenuSel' . s:fg_teal .s:bg_bg_lt
-exe 'hi PmenuSbar guifg=#586e75' 
-exe 'hi PmenuThumb' .s:bg_bg 
-exe 'hi PmenuKind' .s:bg_bg_dim. s:fg_yellow 
+exe 'hi Pmenu guibg=#14131f ' .s:fg_fg_dim
+exe 'hi PmenuSel guibg=#222038 ' . s:fg_teal
+exe 'hi PmenuSbar guifg=#586e75'
+exe 'hi PmenuKind guibg=#14131f ' . s:fg_yellow 
 hi! link PmenuKindSel PmenuSel
 hi! link PmenuExtra Pmenu
 hi! link PmenuExtraSel PmenuSel
 hi! link WildMenu Pmenu
 "statusline
-exe 'hi StatusLine' .s:fg_fg_dim . s:bg_bg_lt. ' gui=bold cterm=none'
-exe 'hi StatusLineNC' . s:fg_fg_dim .s:bg_bg_alt
+exe 'hi StatusLine' .s:fg_fg_dim . s:bg_bg_deep. ' gui=bold cterm=none'
+exe 'hi StatusLineNC' . s:fg_fg_dim .s:bg_bg_deep
 exe 'hi WinBar' .s:bg_none
 exe 'hi WinBarNC' . s:bg_none
 "Error
@@ -246,7 +245,7 @@ exe 'hi TelescopeSelectionCaret' . s:fg_yellow
 exe 'hi TelescopeMatching' . s:fg_yellow 
 "CursorWord
 exe 'hi CursorWord' .s:bg_bg_alt 
-hi! link IndentLine LineNr 
+exe 'hi IndentLine' .s:fg_bg_alt 
 "Lspsaga
 exe 'hi SagaVariable' . s:fg_green 
 "Rapid
