@@ -94,6 +94,7 @@ hi! link  NonText Comment
 exe 'hi FloatBorder' . s:fg_blue
 hi! link FloatNormal Normal
 exe 'hi FloatShadow' .s:bg_bg_alt
+exe 'hi NormalFloat' . s:bg_bg_alt
 "Fold
 exe 'hi Folded' . s:fg_bg .'gui=bold'
 hi! link FoldColumn SignColumn 
