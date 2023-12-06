@@ -13,7 +13,7 @@ let s:background = &background
 " #0d1925
 let s:p = #{
       \  bg : '#161a24',
-      \  bg_dim : '#191721',
+      \  bg_dim : '#1f2533',
       \  bg_lt : '#292c33',
       \  bg_alt : '#303030' ,
       \  fg : '#cccccc',
@@ -94,7 +94,7 @@ hi! link  NonText Comment
 exe 'hi FloatBorder' . s:fg_blue
 hi! link FloatNormal Normal
 exe 'hi FloatShadow' .s:bg_bg_alt
-exe 'hi NormalFloat' . s:bg_bg_alt
+exe 'hi NormalFloat' . s:bg_bg_dim
 "Fold
 exe 'hi Folded' . s:fg_bg .'gui=bold'
 hi! link FoldColumn SignColumn 
