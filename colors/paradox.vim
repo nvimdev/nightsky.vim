@@ -70,7 +70,7 @@ exe 'hi Cursorline' .s:bg_bg_alt
 exe 'hi CursorLineNr' . s:fg_fg 
 "pmenu
 exe 'hi Pmenu' .s:bg_bg_dim. s:fg_fg_dim 
-exe 'hi PmenuSel' . s:fg_teal .s:bg_bg_alt
+exe 'hi PmenuSel' . s:fg_teal .s:bg_bg_lt
 exe 'hi PmenuSbar guifg=#586e75' 
 exe 'hi PmenuThumb' .s:bg_bg 
 exe 'hi PmenuKind' .s:bg_bg_dim. s:fg_yellow 
