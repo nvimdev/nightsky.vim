@@ -12,8 +12,8 @@ let s:background = &background
 
 " #0d1925
 let s:p = #{
-      \  bg : '#161a24',
-      \  bg_deep: '#13151f',
+      \  bg : '#141821',
+      \  bg_float: '#14131f',
       \  bg_dim : '#1c202e',
       \  bg_alt : '#222738' ,
       \  fg : '#cccccc',
@@ -69,17 +69,17 @@ exe 'hi Title' . s:fg_orange .'gui=bold'
 exe 'hi Cursorline' .s:bg_bg_dim
 exe 'hi CursorLineNr' . s:fg_fg
 "pmenu
-exe 'hi Pmenu guibg=#14131f ' .s:fg_fg_dim
+exe 'hi Pmenu ' . s:bg_bg_float .s:fg_fg_dim
 exe 'hi PmenuSel guibg=#222038 ' . s:fg_teal
 exe 'hi PmenuSbar guifg=#586e75'
-exe 'hi PmenuKind guibg=#14131f ' . s:fg_yellow 
+exe 'hi PmenuKind ' . s:bg_bg_float . s:fg_yellow 
 hi! link PmenuKindSel PmenuSel
 hi! link PmenuExtra Pmenu
 hi! link PmenuExtraSel PmenuSel
 hi! link WildMenu Pmenu
 "statusline
-exe 'hi StatusLine' .s:fg_fg_dim . s:bg_bg_deep. ' gui=bold cterm=none'
-exe 'hi StatusLineNC' . s:fg_fg_dim .s:bg_bg_deep
+exe 'hi StatusLine' .s:fg_fg_dim . s:bg_bg_float. ' gui=bold cterm=none'
+exe 'hi StatusLineNC' . s:fg_fg_dim .s:bg_bg_float
 exe 'hi WinBar' .s:bg_none
 exe 'hi WinBarNC' . s:bg_none
 "Error
@@ -91,7 +91,7 @@ exe 'hi Conceal' . s:fg_blue .. ' guibg=NONE'
 hi! link  NonText Comment
 "Float
 exe 'hi FloatBorder' . s:fg_blue
-exe 'hi NormalFloat' . s:bg_bg_deep
+exe 'hi NormalFloat' . s:bg_bg_float
 "Fold
 exe 'hi Folded' . s:fg_bg .'gui=bold'
 hi! link FoldColumn SignColumn 
