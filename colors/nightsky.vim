@@ -92,7 +92,7 @@ exe 'hi Conceal' . s:fg_blue .. ' guibg=NONE'
 hi! link  NonText Comment
 "Float
 exe 'hi FloatBorder' . s:fg_blue
-exe 'hi NormalFloat' . s:bg_bg_float
+exe 'hi NormalFloat' . s:bg_bg_float . s:fg_fg
 "Fold
 exe 'hi Folded' . s:fg_bg .'gui=bold'
 hi! link FoldColumn SignColumn 
