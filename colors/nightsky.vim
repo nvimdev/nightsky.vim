@@ -10,13 +10,12 @@ let g:colors_name = 'nightsky'
 set background=dark
 let s:background = &background
 
-" #cccccc
 let s:p = #{
       \  bg : '#141821',
       \  bg_float: '#14131f',
       \  bg_dim : '#1c202e',
       \  bg_alt : '#222738' ,
-      \  fg : '#bfbfbf',
+      \  fg : '#cccccc',
       \  fg_dim : '#989898',
       \  fg_alt : '#75715E',
       \  red :    '#ff5f59' ,
