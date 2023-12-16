@@ -133,6 +133,8 @@ hi! link  @keyword.operator Operator
 hi! link Conditional Keyword 
 "for while
 hi! link Repeat Conditional 
+"for attribute
+hi! link @attribute Keyword
 
 exe 'hi Debug' . s:fg_orange 
 exe 'hi Label' . s:fg_purple 
