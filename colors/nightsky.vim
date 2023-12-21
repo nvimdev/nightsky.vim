@@ -178,7 +178,7 @@ hi! link Boolean Constant
 "
 hi! link Define PreProc 
 exe 'hi Operator' . s:fg_fg_dim 
-exe 'hi Comment' . s:fg_fg_alt 
+hi Comment guifg=#3d4966
 "------------------------------------------------------
 "-@punctuation
 exe 'hi @punctuation.bracket' . s:fg_fg_dim 
