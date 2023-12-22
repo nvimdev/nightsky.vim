@@ -19,7 +19,7 @@ let s:p = #{
       \  fg_dim : '#989898',
       \  fg_alt : '#75715E',
       \  red :    '#ff5f59' ,
-      \  orange : '#bf7c39' ,
+      \  orange : '#cc853d' ,
       \  yellow : '#ccad52' ,
       \  green : '#9eb336' ,
       \  cyan : '#52bccc' ,
