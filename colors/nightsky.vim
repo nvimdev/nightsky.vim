@@ -207,10 +207,10 @@ hi! link @text.diff.delete.diff DiffDelete
 hi! link @text.diff.change.diff DiffChange
 "------------------------------------------------------
 "-@Diagnostic
-hi! link  DiagnosticError Error
-exe 'hi DiagnosticWarn' . s:fg_yellow 
-exe 'hi DiagnosticInfo' . s:fg_blue 
-exe 'hi DiagnosticHint' . s:fg_cyan 
+exe 'hi DiagnosticError'. s:fg_red    . ' gui=undercurl'
+exe 'hi DiagnosticWarn' . s:fg_yellow . ' gui=undercurl'
+exe 'hi DiagnosticInfo' . s:fg_blue   . ' gui=undercurl'
+exe 'hi DiagnosticHint' . s:fg_cyan   . ' gui=undercurl'
 hi! link  DiagnosticSignError DiagnosticError
 hi! link  DiagnosticSignWarn DiagnosticWarn
 hi! link  DiagnosticSignInfo DiagnosticInfo
