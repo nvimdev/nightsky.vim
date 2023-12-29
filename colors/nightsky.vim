@@ -258,5 +258,8 @@ exe 'hi RapidTargetPos' . s:fg_teal . ' gui=bold'
 "lsp relate
 exe 'hi LspSignatureActiveParameter' . s:fg_yellow . ' gui=underline'
 
+"whiskyline
+exe 'hi Whiskymode'. s:bg_purple . s:fg_bg_alt ' gui=bold'
+
 "netrw
 hi! link netrwTreeBar Comment
