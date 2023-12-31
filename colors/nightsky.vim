@@ -215,10 +215,10 @@ hi! link  DiagnosticSignError DiagnosticError
 hi! link  DiagnosticSignWarn DiagnosticWarn
 hi! link  DiagnosticSignInfo DiagnosticInfo
 hi! link  DiagnosticSignHint DiagnosticHint
-exe 'hi DiagnosticUnderlineError' .  ' gui=undercurl' . s:fg_red
-exe 'hi DiagnosticUnderlineWarn' .  ' gui=undercurl' . s:fg_yellow
-exe 'hi DiagnosticUnderlineInfo' .  ' gui=undercurl' . s:fg_blue
-exe 'hi DiagnosticUnderlineHint' .  ' gui=undercurl' . s:fg_cyan
+exe 'hi DiagnosticUnderlineError' .  ' gui=undercurl guisp=' . s:p["red"]
+exe 'hi DiagnosticUnderlineWarn' .  ' gui=undercurl  guisp=' . s:p["yellow"]
+exe 'hi DiagnosticUnderlineInfo' .  ' gui=undercurl  guisp=' . s:p["blue"]
+exe 'hi DiagnosticUnderlineHint' .  ' gui=undercurl  guisp=' . s:p["cyan"]
 "-@plugin
 exe 'hi GitGutterAdd' . s:fg_teal
 exe 'hi GitGutterChange' . s:fg_blue
