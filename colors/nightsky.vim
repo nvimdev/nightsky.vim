@@ -129,6 +129,7 @@ exe 'hi Keyword' . s:fg_green
 hi! link  @keyword.function Keyword
 hi! link  @keyword.return   Keyword
 hi! link  @keyword.operator Operator
+hi! link  @keyword.import   PreProc
 "if else
 hi! link Conditional Keyword
 "for while
