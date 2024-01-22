@@ -113,8 +113,10 @@ exe 'hi Directory' . s:fg_blue
 exe 'hi Identifier' . s:fg_blue
 " various variable names
 exe 'hi @variable' . s:fg_fg
-"built-in variable names (e.g. `this`)
+" built-in variable names (e.g. `this`)
 exe 'hi @variable.builtin' . s:fg_purple
+" link to field
+exe 'hi @variable.member' . s:fg_cyan
 exe 'hi Constant' . s:fg_orange
 hi! link @constant.builtin   Constant
 " constants defined by the preprocessor
