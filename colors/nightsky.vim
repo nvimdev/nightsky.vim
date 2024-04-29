@@ -251,6 +251,7 @@ exe 'hi TelescopeMatching' . s:fg_yellow
 "CursorWord
 exe 'hi CursorWord' .s:bg_bg_alt
 exe 'hi IndentLine' .s:fg_bg_alt
+exe 'hi IndentLineCurrent' . ' guifg=#79a8a3'
 "Lspsaga
 exe 'hi SagaVariable' . s:fg_green
 "Rapid
