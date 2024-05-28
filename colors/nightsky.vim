@@ -10,7 +10,6 @@ let g:colors_name = 'nightsky'
 set background=dark
 let s:background = &background
 
-"\  nred:    '#AC4142',
 let s:p = #{
       \  bg : '#141821',
       \  bg_float: '#14131f',
@@ -20,6 +19,7 @@ let s:p = #{
       \  fg_dim : '#989898',
       \  fg_alt : '#75715E',
       \  red :    '#ff5f59',
+      \  wine:    '#B05279',
       \  orange : '#cc853d',
       \  yellow : '#ccad52',
       \  green :  '#9eb336',
