@@ -129,16 +129,18 @@ exe 'hi @namespace' . s:fg_cyan
 "symbols or atoms
 " ['@symbol'] = exe},
 "------------------------------------------------------
-"-@Keywords
+"if else
+exe 'hi Conditional' . s:fg_wine
+"for while
+hi! link Repeat Conditional
+"-@fg_Keywords
 exe 'hi Keyword' . s:fg_green
 hi! link  @keyword.function Keyword
 hi! link  @keyword.return   Keyword
 hi! link  @keyword.operator Operator
 hi! link  @keyword.import   PreProc
-"if else
-hi! link Conditional Keyword
-"for while
-hi! link Repeat Conditional
+hi! link  @keyword.conditional  Conditional
+hi! link  @keyword.repeat  Conditional
 "for attribute
 hi! link @attribute Keyword
 
@@ -252,7 +254,7 @@ exe 'hi TelescopeMatching' . s:fg_yellow
 "CursorWord
 exe 'hi CursorWord' .s:bg_bg_alt
 exe 'hi IndentLine' .s:fg_bg_alt
-exe 'hi IndentLineCurrent' . ' guifg=#708547'
+exe 'hi IndentLineCurrent' . ' guifg=#5a647e'
 "Lspsaga
 exe 'hi SagaVariable' . s:fg_green
 "Rapid
@@ -264,6 +266,8 @@ exe 'hi RapidTargetPos' . s:fg_teal . ' gui=bold'
 
 "lsp relate
 exe 'hi LspSignatureActiveParameter' . s:fg_yellow . ' gui=underline'
+
+hi! link cStorageClass Keyword
 
 "netrw
 hi! link netrwTreeBar Comment
