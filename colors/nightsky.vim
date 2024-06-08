@@ -256,12 +256,8 @@ exe 'hi IndentLine' .s:fg_bg_alt
 exe 'hi IndentLineCurrent' . ' guifg=#5a647e'
 "Lspsaga
 exe 'hi SagaVariable' . s:fg_green
-"Rapid
-exe 'hi RapidFinished' .s:fg_red . ' gui=bold'
-exe 'hi RapidTake' .s:fg_purple . ' gui=bold'
-exe 'hi RapidDate' .s:fg_purple . ' gui=bold'
-exe 'hi RapidFile' . s:fg_blue . ' gui=bold'
-exe 'hi RapidTargetPos' . s:fg_teal . ' gui=bold'
+" cword
+exe 'hi CursorWord gui=undercurl'
 
 "lsp relate
 exe 'hi LspSignatureActiveParameter' . s:fg_yellow . ' gui=underline'
