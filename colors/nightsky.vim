@@ -251,8 +251,7 @@ exe 'hi TelescopePreviewBorder' .s:bg_bg_alt . s:fg_bg_alt
 exe 'hi TelescopeResultsNormal' . s:fg_fg
 exe 'hi TelescopeSelectionCaret' . s:fg_yellow
 exe 'hi TelescopeMatching' . s:fg_yellow
-"CursorWord
-exe 'hi CursorWord' .s:bg_bg_alt
+
 exe 'hi IndentLine' .s:fg_bg_alt
 exe 'hi IndentLineCurrent' . ' guifg=#5a647e'
 "Lspsaga
