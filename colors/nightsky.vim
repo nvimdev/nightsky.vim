@@ -114,8 +114,8 @@ exe 'hi Directory' . s:fg_blue
 exe 'hi Identifier' . s:fg_blue
 " various variable names
 exe 'hi @variable' . s:fg_fg
-" built-in variable names (e.g. `this`)
-exe 'hi @variable.builtin' . s:fg_fg
+" built-in variable names (e.g. `this`, `self`)
+exe 'hi @variable.builtin' . s:fg_wine
 " function paramter
 exe 'hi @variable.paramter' . s:fg_fg
 " link to field
@@ -130,7 +130,7 @@ exe 'hi @namespace' . s:fg_cyan
 " ['@symbol'] = exe},
 "------------------------------------------------------
 "if else
-exe 'hi Conditional' . s:fg_wine
+exe 'hi Conditional' . s:fg_green
 "for while
 hi! link Repeat Conditional
 "-@fg_Keywords
