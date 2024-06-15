@@ -208,7 +208,7 @@ hi! link  @tag.delimiter.typescript @tag.delimiter.html
 "-@Markdown
 exe 'hi @text.reference.markdown_inline' . s:fg_blue
 "-@Diff
-exe 'hi DiffAdd' . s:fg_teal
+exe 'hi DiffAdd' . s:fg_teal  . ' guibg=NONE'
 exe 'hi DiffChange' . s:fg_blue
 exe 'hi DiffDelete' . s:fg_orange
 exe 'hi DiffText' . s:fg_orange
@@ -229,6 +229,11 @@ exe 'hi DiagnosticUnderlineError' .  ' gui=undercurl guisp=' . s:p["red"]
 exe 'hi DiagnosticUnderlineWarn' .  ' gui=undercurl  guisp=' . s:p["yellow"]
 exe 'hi DiagnosticUnderlineInfo' .  ' gui=undercurl  guisp=' . s:p["blue"]
 exe 'hi DiagnosticUnderlineHint' .  ' gui=undercurl  guisp=' . s:p["cyan"]
+"-@plugin
+exe 'hi GitSignsAdd' . s:fg_teal
+exe 'hi GitSignsChange' . s:fg_blue
+exe 'hi GitSignsDelete' . s:fg_red
+exe 'hi GitSignsChangeDelete' . s:fg_red
 "dashboard
 exe 'hi DashboardHeader' . s:fg_green
 hi! link DashboardFooter Comment
