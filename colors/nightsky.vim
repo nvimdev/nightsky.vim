@@ -73,6 +73,8 @@ exe 'hi Pmenu ' . s:bg_bg_float .s:fg_fg_dim
 exe 'hi PmenuSel guibg=#222038 ' . s:fg_teal
 exe 'hi PmenuSbar guifg=#586e75'
 exe 'hi PmenuKind ' . s:bg_bg_float . s:fg_yellow
+exe 'hi PmenuMatchSel guibg=#222038 ' . s:fg_orange
+exe 'hi PmenuMatch ' . s:bg_bg_float .  s:fg_orange
 hi! link PmenuKindSel PmenuSel
 hi! link PmenuExtra Pmenu
 hi! link PmenuExtraSel PmenuSel
